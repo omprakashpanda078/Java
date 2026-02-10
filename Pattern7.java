@@ -1,5 +1,5 @@
 
-public class Pattern5 {
+public class Pattern7 {
     public static void main(String[] args) {
         int n = 5;
         // outer loop
