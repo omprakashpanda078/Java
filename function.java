@@ -1,16 +1,22 @@
 import java.util.*;
 
 public class function {
-    public static int multiply(int a, int b) {
-        int multiply = a * b;
-        return a * b;
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int product = multiply(a, b);
-        System.out.println("the multiplication of a and b is:"+product);
+    public static void printFactorial(int n){
+        int factorial=1;
+        //loop
+        if(n<0){
+            System.out.println("invalid number");
+            return;
+        }
+        for(int i=n;i>=1;i--){
+            factorial=factorial*i;
+        }
+        System.out.println(factorial);
+        return;
+    } 
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int n = sc.nextInt();
+        printFactorial(n);
     }
 }
